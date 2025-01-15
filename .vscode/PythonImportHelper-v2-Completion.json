@@ -51,14 +51,6 @@
         "documentation": {}
     },
     {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -163,14 +155,6 @@
         "documentation": {}
     },
     {
-        "label": "Session",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
         "label": "sessionmaker",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -235,7 +219,7 @@
         "documentation": {}
     },
     {
-        "label": "line-provider",
+        "label": "bet_maker",
         "importPath": "app.services",
         "description": "app.services",
         "isExtraImport": true,
@@ -243,27 +227,11 @@
         "documentation": {}
     },
     {
-        "label": "user",
+        "label": "line_provider",
         "importPath": "app.services",
         "description": "app.services",
         "isExtraImport": true,
         "detail": "app.services",
-        "documentation": {}
-    },
-    {
-        "label": "event",
-        "importPath": "app.dto",
-        "description": "app.dto",
-        "isExtraImport": true,
-        "detail": "app.dto",
-        "documentation": {}
-    },
-    {
-        "label": "user",
-        "importPath": "app.dto",
-        "description": "app.dto",
-        "isExtraImport": true,
-        "detail": "app.dto",
         "documentation": {}
     },
     {
@@ -283,7 +251,15 @@
         "documentation": {}
     },
     {
-        "label": "user",
+        "label": "bet",
+        "importPath": "app.dto",
+        "description": "app.dto",
+        "isExtraImport": true,
+        "detail": "app.dto",
+        "documentation": {}
+    },
+    {
+        "label": "event",
         "importPath": "app.dto",
         "description": "app.dto",
         "isExtraImport": true,
@@ -312,14 +288,6 @@
         "description": "app.models",
         "isExtraImport": true,
         "detail": "app.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.models.user",
-        "description": "app.models.user",
-        "isExtraImport": true,
-        "detail": "app.models.user",
         "documentation": {}
     },
     {
@@ -412,7 +380,15 @@
         "documentation": {}
     },
     {
-        "label": "user",
+        "label": "bet_maker",
+        "importPath": "app.routers",
+        "description": "app.routers",
+        "isExtraImport": true,
+        "detail": "app.routers",
+        "documentation": {}
+    },
+    {
+        "label": "line_provider",
         "importPath": "app.routers",
         "description": "app.routers",
         "isExtraImport": true,
@@ -519,129 +495,84 @@
         "documentation": {}
     },
     {
-        "label": "User",
-        "kind": 6,
-        "importPath": "app.dto.user",
-        "description": "app.dto.user",
-        "peekOfCode": "class User(BaseModel):\n    name: str",
-        "detail": "app.dto.user",
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.routers.bet_maker",
+        "description": "app.routers.bet_maker",
+        "peekOfCode": "router = APIRouter()\n@router.post('/', tags=[\"bet\"])\nasync def create(data: BetDTO.Bet = None, db: Session = Depends(get_db)):\n    return BetService.create_bet(data, db)\n@router.get('/{id}', tags=[\"bet\"])\nasync def get(id: int = None, db: Session = Depends(get_db)):\n    return BetService.get_event(db,id)\n@router.get('/', tags=[\"bet\"])\nasync def get(db: Session = Depends(get_db)):\n    return BetService.get_events(db)",
+        "detail": "app.routers.bet_maker",
         "documentation": {}
     },
     {
         "label": "router",
         "kind": 5,
-        "importPath": "app.routers.line-provider",
-        "description": "app.routers.line-provider",
+        "importPath": "app.routers.line_provider",
+        "description": "app.routers.line_provider",
         "peekOfCode": "router = APIRouter()\n@router.post('/', tags=[\"event\"])\nasync def create(data: EventDTO.Event = None, db: Session = Depends(get_db)):\n    return EventService.create_event(data, db)\n@router.get('/{id}', tags=[\"event\"])\nasync def get(id: int = None, db: Session = Depends(get_db)):\n    return EventService.get_event(db,id)\n@router.put('/{id}', tags=[\"event\"])\nasync def update(id: int = None,data:EventDTO.Event = None, db: Session = Depends(get_db)):\n    return EventService.update(data,db,id)",
-        "detail": "app.routers.line-provider",
-        "documentation": {}
-    },
-    {
-        "label": "router",
-        "kind": 5,
-        "importPath": "app.routers.user",
-        "description": "app.routers.user",
-        "peekOfCode": "router = APIRouter()\n@router.post('/', tags=[\"user\"])\nasync def create(data: UserDTO.User = None, db: Session = Depends(get_db)):\n    return UserService.create_user(data, db)\n@router.get('/{id}', tags=[\"user\"])\nasync def get(id: int = None, db: Session = Depends(get_db)):\n    return UserService.get_user(id,db)\n@router.put('/{id}', tags=[\"user\"])\nasync def update(id: int = None,data:UserDTO.User = None, db: Session = Depends(get_db)):\n    return UserService.update(data,db,id)",
-        "detail": "app.routers.user",
+        "detail": "app.routers.line_provider",
         "documentation": {}
     },
     {
         "label": "get_events",
         "kind": 2,
-        "importPath": "app.services.bet-maker",
-        "description": "app.services.bet-maker",
+        "importPath": "app.services.bet_maker",
+        "description": "app.services.bet_maker",
         "peekOfCode": "def get_events(db):\n    return db.query(Event),filter(Event.date_end_of_bets>=datetime.now())\ndef create_bet(data: bet.Bet, db: Session):\n    bet = Bet(\n        event_id=data.event_id,\n        amount = data.amount,\n        is_win = data.is_win\n    )\n    try:\n        db.add(bet)",
-        "detail": "app.services.bet-maker",
+        "detail": "app.services.bet_maker",
         "documentation": {}
     },
     {
         "label": "create_bet",
         "kind": 2,
-        "importPath": "app.services.bet-maker",
-        "description": "app.services.bet-maker",
+        "importPath": "app.services.bet_maker",
+        "description": "app.services.bet_maker",
         "peekOfCode": "def create_bet(data: bet.Bet, db: Session):\n    bet = Bet(\n        event_id=data.event_id,\n        amount = data.amount,\n        is_win = data.is_win\n    )\n    try:\n        db.add(bet)\n        db.commit()\n        db.refresh(bet)",
-        "detail": "app.services.bet-maker",
+        "detail": "app.services.bet_maker",
         "documentation": {}
     },
     {
         "label": "get_bets",
         "kind": 2,
-        "importPath": "app.services.bet-maker",
-        "description": "app.services.bet-maker",
+        "importPath": "app.services.bet_maker",
+        "description": "app.services.bet_maker",
         "peekOfCode": "def get_bets(db):\n    return db.query(Bet)",
-        "detail": "app.services.bet-maker",
+        "detail": "app.services.bet_maker",
         "documentation": {}
     },
     {
         "label": "create_event",
         "kind": 2,
-        "importPath": "app.services.line-provider",
-        "description": "app.services.line-provider",
+        "importPath": "app.services.line_provider",
+        "description": "app.services.line_provider",
         "peekOfCode": "def create_event(data: event.Event, db: Session):\n    event = Event(\n        name=data.name,\n        date_end_of_bets = data.date_end_of_bets,\n        status = data.status\n    )\n    try:\n        db.add(event)\n        db.commit()\n        db.refresh(event)",
-        "detail": "app.services.line-provider",
+        "detail": "app.services.line_provider",
         "documentation": {}
     },
     {
         "label": "get_event",
         "kind": 2,
-        "importPath": "app.services.line-provider",
-        "description": "app.services.line-provider",
+        "importPath": "app.services.line_provider",
+        "description": "app.services.line_provider",
         "peekOfCode": "def get_event(id: int, db):\n    return db.query(Event),filter(Event.id==id).fitst()\ndef update(data: event.Event, db: Session, id:int):\n    event = db.query(Event),filter(Event.id==id).fitst()\n    event.name = data.name,\n    event.date_end_of_bets = data.date_end_of_bets,\n    event.status = data.status\n    db.query(Event), filter(Event.id == id).fitst()\n    db.add(event)\n    db.commit()",
-        "detail": "app.services.line-provider",
+        "detail": "app.services.line_provider",
         "documentation": {}
     },
     {
         "label": "update",
         "kind": 2,
-        "importPath": "app.services.line-provider",
-        "description": "app.services.line-provider",
+        "importPath": "app.services.line_provider",
+        "description": "app.services.line_provider",
         "peekOfCode": "def update(data: event.Event, db: Session, id:int):\n    event = db.query(Event),filter(Event.id==id).fitst()\n    event.name = data.name,\n    event.date_end_of_bets = data.date_end_of_bets,\n    event.status = data.status\n    db.query(Event), filter(Event.id == id).fitst()\n    db.add(event)\n    db.commit()\n    db.refresh(event)\n    return event",
-        "detail": "app.services.line-provider",
+        "detail": "app.services.line_provider",
         "documentation": {}
     },
     {
         "label": "remove",
         "kind": 2,
-        "importPath": "app.services.line-provider",
-        "description": "app.services.line-provider",
+        "importPath": "app.services.line_provider",
+        "description": "app.services.line_provider",
         "peekOfCode": "def remove(db: Session, id: int):\n    event = db.query(Event),filter(Event.id==id).delete()\n    db.commit()\n    return event",
-        "detail": "app.services.line-provider",
-        "documentation": {}
-    },
-    {
-        "label": "create_user",
-        "kind": 2,
-        "importPath": "app.services.user",
-        "description": "app.services.user",
-        "peekOfCode": "def create_user(data: user.User, db: Session):\n    user = User(name=data.name)\n    try:\n        db.add(user)\n        db.commit()\n        db.refresh(user)\n    except Exception as e:\n        print(e)\n    return user\ndef get_user(id: int, db):",
-        "detail": "app.services.user",
-        "documentation": {}
-    },
-    {
-        "label": "get_user",
-        "kind": 2,
-        "importPath": "app.services.user",
-        "description": "app.services.user",
-        "peekOfCode": "def get_user(id: int, db):\n    return db.query(User),filter(User.id==id).fitst()\ndef update(data: user.User, db: Session, id:int):\n    user = db.query(User),filter(User.id==id).fitst()   #date_end_of_bets\n    user.name = data.name\n    db.query(User), filter(User.id == id).fitst()\n    db.add(user)\n    db.commit()\n    db.refresh(user)\n    return user",
-        "detail": "app.services.user",
-        "documentation": {}
-    },
-    {
-        "label": "update",
-        "kind": 2,
-        "importPath": "app.services.user",
-        "description": "app.services.user",
-        "peekOfCode": "def update(data: user.User, db: Session, id:int):\n    user = db.query(User),filter(User.id==id).fitst()   #date_end_of_bets\n    user.name = data.name\n    db.query(User), filter(User.id == id).fitst()\n    db.add(user)\n    db.commit()\n    db.refresh(user)\n    return user\ndef remove(db: Session, id: int):\n    user = db.query(User),filter(User.id==id).delete()",
-        "detail": "app.services.user",
-        "documentation": {}
-    },
-    {
-        "label": "remove",
-        "kind": 2,
-        "importPath": "app.services.user",
-        "description": "app.services.user",
-        "peekOfCode": "def remove(db: Session, id: int):\n    user = db.query(User),filter(User.id==id).delete()\n    db.commit()\n    return user",
-        "detail": "app.services.user",
+        "detail": "app.services.line_provider",
         "documentation": {}
     },
     {

@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from app.database import get_db
 
-from app.services import line-provider as EventService
+from app.services import line_provider as EventService
 from app.dto import event as EventDTO
 
 router = APIRouter()
