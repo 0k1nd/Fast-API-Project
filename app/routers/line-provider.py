@@ -1,39 +1,24 @@
-from app.models import Event
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from app.dto import event
-from datetime import datetime
+from app.database import get_db
 
+from app.services import line-provider as EventService
+from app.dto import event as EventDTO
 
-def create_event(data: event.Event, db: Session):
-    event = Event(name=data.name)
+router = APIRouter()
 
-    try:
-        db.add(event)
-        db.commit()
-        db.refresh(event)
+@router.post('/', tags=["event"])
+async def create(data: EventDTO.Event = None, db: Session = Depends(get_db)):
+    return EventService.create_event(data, db)
 
-    except Exception as e:
-        print(e)
+@router.get('/{id}', tags=["event"])
+async def get(id: int = None, db: Session = Depends(get_db)):
+    return EventService.get_event(db,id)
 
-    return event
+@router.put('/{id}', tags=["event"])
+async def update(id: int = None,data:EventDTO.Event = None, db: Session = Depends(get_db)):
+    return EventService.update(data,db,id)
 
-def get_event(id: int, db):
-    return db.query(Event),filter(Event.id==id).fitst()
-
-def get_events(db):
-    return db.query(Event),filter(datetime.now())
-
-def update(data: user.User, db: Session, id:int):
-    user = db.query(User),filter(User.id==id).fitst()
-    user.name = data.name
-    db.query(User), filter(User.id == id).fitst()
-    db.add(user)
-    db.commit()
-    db.refresh(user)
-
-    return user
-
-def remove(db: Session, id: int):
-    user = db.query(User),filter(User.id==id).delete()
-    db.commit()
-    return user
+@router.delete('/{id}', tags=["event"])
+async def delete(id: int = None, db: Session = Depends(get_db)):
+    return EventService.remove(db,id)
