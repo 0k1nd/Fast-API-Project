@@ -1,0 +1,7 @@
+from pydantic import  BaseModel
+from datetime import datetime
+
+class Event(BaseModel):
+    name: str
+    date_end_of_bets: datetime
+    status: str

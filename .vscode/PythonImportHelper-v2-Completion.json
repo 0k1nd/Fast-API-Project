@@ -1,0 +1,704 @@
+[
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Event",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Event",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Bet",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Event",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "event",
+        "importPath": "app.dto",
+        "description": "app.dto",
+        "isExtraImport": true,
+        "detail": "app.dto",
+        "documentation": {}
+    },
+    {
+        "label": "user",
+        "importPath": "app.dto",
+        "description": "app.dto",
+        "isExtraImport": true,
+        "detail": "app.dto",
+        "documentation": {}
+    },
+    {
+        "label": "bet",
+        "importPath": "app.dto",
+        "description": "app.dto",
+        "isExtraImport": true,
+        "detail": "app.dto",
+        "documentation": {}
+    },
+    {
+        "label": "event",
+        "importPath": "app.dto",
+        "description": "app.dto",
+        "isExtraImport": true,
+        "detail": "app.dto",
+        "documentation": {}
+    },
+    {
+        "label": "user",
+        "importPath": "app.dto",
+        "description": "app.dto",
+        "isExtraImport": true,
+        "detail": "app.dto",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "Sessionlocal",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "user",
+        "importPath": "app.services",
+        "description": "app.services",
+        "isExtraImport": true,
+        "detail": "app.services",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.user",
+        "description": "app.models.user",
+        "isExtraImport": true,
+        "detail": "app.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "CheckConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
+        "documentation": {}
+    },
+    {
+        "label": "user",
+        "importPath": "app.routers",
+        "description": "app.routers",
+        "isExtraImport": true,
+        "detail": "app.routers",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "Bet",
+        "kind": 6,
+        "importPath": "app.dto.bet",
+        "description": "app.dto.bet",
+        "peekOfCode": "class Bet(BaseModel):\n    event_id = int\n    amount = float\n    is_win: Optional[bool]\n    class Config:\n        orm_mode = True",
+        "detail": "app.dto.bet",
+        "documentation": {}
+    },
+    {
+        "label": "Event",
+        "kind": 6,
+        "importPath": "app.dto.event",
+        "description": "app.dto.event",
+        "peekOfCode": "class Event(BaseModel):\n    name: str\n    date_end_of_bets: datetime\n    status: str",
+        "detail": "app.dto.event",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "app.dto.user",
+        "description": "app.dto.user",
+        "peekOfCode": "class User(BaseModel):\n    name: str",
+        "detail": "app.dto.user",
+        "documentation": {}
+    },
+    {
+        "label": "create_event",
+        "kind": 2,
+        "importPath": "app.routers.line-provider",
+        "description": "app.routers.line-provider",
+        "peekOfCode": "def create_event(data: event.Event, db: Session):\n    event = Event(name=data.name)\n    try:\n        db.add(event)\n        db.commit()\n        db.refresh(event)\n    except Exception as e:\n        print(e)\n    return event\ndef get_event(id: int, db):",
+        "detail": "app.routers.line-provider",
+        "documentation": {}
+    },
+    {
+        "label": "get_event",
+        "kind": 2,
+        "importPath": "app.routers.line-provider",
+        "description": "app.routers.line-provider",
+        "peekOfCode": "def get_event(id: int, db):\n    return db.query(Event),filter(Event.id==id).fitst()\ndef get_events(db):\n    return db.query(Event),filter(datetime.now())\ndef update(data: user.User, db: Session, id:int):\n    user = db.query(User),filter(User.id==id).fitst()\n    user.name = data.name\n    db.query(User), filter(User.id == id).fitst()\n    db.add(user)\n    db.commit()",
+        "detail": "app.routers.line-provider",
+        "documentation": {}
+    },
+    {
+        "label": "get_events",
+        "kind": 2,
+        "importPath": "app.routers.line-provider",
+        "description": "app.routers.line-provider",
+        "peekOfCode": "def get_events(db):\n    return db.query(Event),filter(datetime.now())\ndef update(data: user.User, db: Session, id:int):\n    user = db.query(User),filter(User.id==id).fitst()\n    user.name = data.name\n    db.query(User), filter(User.id == id).fitst()\n    db.add(user)\n    db.commit()\n    db.refresh(user)\n    return user",
+        "detail": "app.routers.line-provider",
+        "documentation": {}
+    },
+    {
+        "label": "update",
+        "kind": 2,
+        "importPath": "app.routers.line-provider",
+        "description": "app.routers.line-provider",
+        "peekOfCode": "def update(data: user.User, db: Session, id:int):\n    user = db.query(User),filter(User.id==id).fitst()\n    user.name = data.name\n    db.query(User), filter(User.id == id).fitst()\n    db.add(user)\n    db.commit()\n    db.refresh(user)\n    return user\ndef remove(db: Session, id: int):\n    user = db.query(User),filter(User.id==id).delete()",
+        "detail": "app.routers.line-provider",
+        "documentation": {}
+    },
+    {
+        "label": "remove",
+        "kind": 2,
+        "importPath": "app.routers.line-provider",
+        "description": "app.routers.line-provider",
+        "peekOfCode": "def remove(db: Session, id: int):\n    user = db.query(User),filter(User.id==id).delete()\n    db.commit()\n    return user",
+        "detail": "app.routers.line-provider",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.routers.user",
+        "description": "app.routers.user",
+        "peekOfCode": "router = APIRouter()\n@router.post('/', tags=[\"user\"])\nasync def create(data: UserDTO.User = None, db: Session = Depends(get_db)):\n    return UserService.create_user(data, db)\n@router.get('/{id}', tags=[\"user\"])\nasync def get(id: int = None, db: Session = Depends(get_db)):\n    return UserService.get_user(id,db)\n@router.put('/{id}', tags=[\"user\"])\nasync def update(id: int = None,data:UserDTO.User = None, db: Session = Depends(get_db)):\n    return UserService.update(data,db,id)",
+        "detail": "app.routers.user",
+        "documentation": {}
+    },
+    {
+        "label": "get_events",
+        "kind": 2,
+        "importPath": "app.services.bet-maker",
+        "description": "app.services.bet-maker",
+        "peekOfCode": "def get_events(db):\n    return db.query(Event),filter(Event.date_end_of_bets>=datetime.now())",
+        "detail": "app.services.bet-maker",
+        "documentation": {}
+    },
+    {
+        "label": "create_event",
+        "kind": 2,
+        "importPath": "app.services.line-provider",
+        "description": "app.services.line-provider",
+        "peekOfCode": "def create_event(data: event.Event, db: Session):\n    event = Event(\n        name=data.name,\n        date_end_of_bets = data.date_end_of_bets,\n        status = data.status\n    )\n    try:\n        db.add(event)\n        db.commit()\n        db.refresh(event)",
+        "detail": "app.services.line-provider",
+        "documentation": {}
+    },
+    {
+        "label": "get_event",
+        "kind": 2,
+        "importPath": "app.services.line-provider",
+        "description": "app.services.line-provider",
+        "peekOfCode": "def get_event(id: int, db):\n    return db.query(Event),filter(Event.id==id).fitst()\ndef update(data: event.Event, db: Session, id:int):\n    event = db.query(Event),filter(Event.id==id).fitst()\n    event.name = data.name,\n    event.date_end_of_bets = data.date_end_of_bets,\n    event.status = data.status\n    db.query(Event), filter(Event.id == id).fitst()\n    db.add(event)\n    db.commit()",
+        "detail": "app.services.line-provider",
+        "documentation": {}
+    },
+    {
+        "label": "update",
+        "kind": 2,
+        "importPath": "app.services.line-provider",
+        "description": "app.services.line-provider",
+        "peekOfCode": "def update(data: event.Event, db: Session, id:int):\n    event = db.query(Event),filter(Event.id==id).fitst()\n    event.name = data.name,\n    event.date_end_of_bets = data.date_end_of_bets,\n    event.status = data.status\n    db.query(Event), filter(Event.id == id).fitst()\n    db.add(event)\n    db.commit()\n    db.refresh(event)\n    return event",
+        "detail": "app.services.line-provider",
+        "documentation": {}
+    },
+    {
+        "label": "remove",
+        "kind": 2,
+        "importPath": "app.services.line-provider",
+        "description": "app.services.line-provider",
+        "peekOfCode": "def remove(db: Session, id: int):\n    event = db.query(Event),filter(Event.id==id).delete()\n    db.commit()\n    return event",
+        "detail": "app.services.line-provider",
+        "documentation": {}
+    },
+    {
+        "label": "create_user",
+        "kind": 2,
+        "importPath": "app.services.user",
+        "description": "app.services.user",
+        "peekOfCode": "def create_user(data: user.User, db: Session):\n    user = User(name=data.name)\n    try:\n        db.add(user)\n        db.commit()\n        db.refresh(user)\n    except Exception as e:\n        print(e)\n    return user\ndef get_user(id: int, db):",
+        "detail": "app.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "get_user",
+        "kind": 2,
+        "importPath": "app.services.user",
+        "description": "app.services.user",
+        "peekOfCode": "def get_user(id: int, db):\n    return db.query(User),filter(User.id==id).fitst()\ndef update(data: user.User, db: Session, id:int):\n    user = db.query(User),filter(User.id==id).fitst()   #date_end_of_bets\n    user.name = data.name\n    db.query(User), filter(User.id == id).fitst()\n    db.add(user)\n    db.commit()\n    db.refresh(user)\n    return user",
+        "detail": "app.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "update",
+        "kind": 2,
+        "importPath": "app.services.user",
+        "description": "app.services.user",
+        "peekOfCode": "def update(data: user.User, db: Session, id:int):\n    user = db.query(User),filter(User.id==id).fitst()   #date_end_of_bets\n    user.name = data.name\n    db.query(User), filter(User.id == id).fitst()\n    db.add(user)\n    db.commit()\n    db.refresh(user)\n    return user\ndef remove(db: Session, id: int):\n    user = db.query(User),filter(User.id==id).delete()",
+        "detail": "app.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "remove",
+        "kind": 2,
+        "importPath": "app.services.user",
+        "description": "app.services.user",
+        "peekOfCode": "def remove(db: Session, id: int):\n    user = db.query(User),filter(User.id==id).delete()\n    db.commit()\n    return user",
+        "detail": "app.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "def get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SQLALCHEMY_URL",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "SQLALCHEMY_URL = \"postgresql://pweb:pweb@db:5432/fast_api\"\nengine = create_engine(SQLALCHEMY_URL)\nSessionlocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "engine = create_engine(SQLALCHEMY_URL)\nSessionlocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "Sessionlocal",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "Sessionlocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "Base = declarative_base()\ndef get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "Event",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Event(Base):\n    __tablename__ = \"events\"\n    id = Column(Integer, primary_key=True, index=True)\n    name = Column(String, index=True)\n    date_end_of_bets = Column(DateTime, CheckConstraint('date_end_of_bets >= datetime.now()'), index=True)\n    status = Column(String, default=\"pending\")\nclass Bet(Base):\n    __tablename__ = \"bets\"\n    id = Column(Integer, primary_key=True, index=True)\n    event_id = Column(Integer, ForeignKey(\"events.id\"))",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Bet",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Bet(Base):\n    __tablename__ = \"bets\"\n    id = Column(Integer, primary_key=True, index=True)\n    event_id = Column(Integer, ForeignKey(\"events.id\"))\n    amount = Column(Float)\n    is_win = Column(Boolean, nullable=True)\n    event = relationship(\"Event\")",
+        "detail": "app.models",
+        "documentation": {}
+    }
+]
