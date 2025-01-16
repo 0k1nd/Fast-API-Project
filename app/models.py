@@ -8,7 +8,7 @@ class Event(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
-    date_end_of_bets = Column(DateTime, CheckConstraint('date_end_of_bets >= datetime.now()'), index=True)
+    date_end_of_bets = Column(DateTime, CheckConstraint('date_end_of_bets >= CURRENT_TIMESTAMP'), index=True)
     status = Column(String, default="pending")
 
 class Bet(Base):
