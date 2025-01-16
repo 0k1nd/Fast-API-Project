@@ -1,3 +1,4 @@
+from enum import Enum
 from pydantic import  BaseModel
 from typing import Optional
 
@@ -7,4 +8,12 @@ class Bet(BaseModel):
     is_win: Optional[bool]
 
     class Config:
-        orm_mode = True
+        from_attributes = True
+
+class EventStatusEnum(str, Enum):
+    win = "1win"
+    loss = "2win"
+
+class BetWebhooks(BaseModel):
+    event_id: int
+    event_stat: EventStatusEnum
