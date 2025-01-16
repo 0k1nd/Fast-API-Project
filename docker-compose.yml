@@ -1,35 +1,59 @@
-# Use postgres/example user/password credentials
 version: '3.9'
 
 services:
-  app:
+  bet_maker:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile_bm
     ports:
       - "8000:8000"
     volumes:
-      - .:/app
+      - .:/bet_maker
     environment:
-      - DATABASE_URL=postgresql://pweb:pweb@db:5432/fast_api
+      - DATABASE_URL=postgresql://pweb:pweb@db1:5432/fast_api_bm
     depends_on:
-      - db
-  db:
-    image: postgres
+      - db1
+    networks:
+      - app_network
 
-#    restart: always
-#     set shared memory limit when using docker-compose
-#    shm_size: 128mb
-#     or set shared memory limit when deploy via swarm stack
-#    volumes:
-#      - type: tmpfs
-#        target: /dev/shm
-#        tmpfs:
-#          size: 134217728 # 128*2^20 bytes = 128Mb
+  line_provider:
+    build:
+      context: .
+      dockerfile: Dockerfile_lp
+    ports:
+      - "8001:8001"
+    volumes:
+      - .:/line_provider
+    environment:
+      - DATABASE_URL=postgresql://pweb:pweb@db2:5432/fast_api_lp
+    depends_on:
+      - db2
+    networks:
+      - app_network
+  db1:
+    image: postgres
+    container_name: db1
     environment:
       POSTGRES_USER: pweb
       POSTGRES_PASSWORD: pweb
-      POSTGRES_DB: fast_api
-
+      POSTGRES_DB: fast_api_bm
     ports:
-      - "5432:5432"
+      - "5434:5432"
+    networks:
+      - app_network
+
+  db2:
+    image: postgres
+    container_name: db2  # 🔥 Даем явное имя контейнеру
+    environment:
+      POSTGRES_USER: pweb
+      POSTGRES_PASSWORD: pweb
+      POSTGRES_DB: fast_api_lp
+    ports:
+      - "5433:5432"  # 🔥 db2 теперь слушает 5433
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge

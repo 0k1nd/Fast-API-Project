@@ -1,0 +1,6 @@
+2025-01-16 09:42:11,013 - INFO - 📩 Webhook received: event_id=7 event_stat=<EventStatusEnum.win: '1win'>
+2025-01-16 09:42:11,025 - ERROR - ❌ Webhook processing error: Class 'builtins.list' is not mapped
+2025-01-16 09:46:37,921 - INFO - 📩 Webhook received: event_id=7 event_stat=<EventStatusEnum.win: '1win'>
+2025-01-16 09:46:37,930 - INFO - ✅ Webhook processed successfully: {'message': 'Updated 1 bets for event 7'}
+2025-01-16 09:52:23,424 - INFO - 📩 Webhook received: event_id=1 event_stat=<EventStatusEnum.win: '1win'>
+2025-01-16 09:52:23,429 - INFO - ✅ Webhook processed successfully: {'message': 'Updated 1 bets for event 1'}
