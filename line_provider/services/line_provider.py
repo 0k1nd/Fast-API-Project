@@ -4,13 +4,13 @@ from sqlalchemy.orm import Session
 from line_provider.dto import event as EventDTO
 from datetime import datetime
 
-BET_MAKER_WEBHOOK_URL = "http://localhost:8000/bet/webhook/"
+BET_MAKER_WEBHOOK_URL = "http://bet_maker:8000/bet/webhook/"
 
 def create_event(data: EventDTO.Event, db: Session):
     event = Event(
-        name=data.name,
         date_end_of_bets=data.date_end_of_bets,
-        status=data.status
+        status=data.status,
+        cof = data.cof
     )
     try:
         db.add(event)
@@ -44,7 +44,6 @@ def send_webhook(event_id: int, event_stat: str):
 def update(data: EventDTO.Event, db: Session, id: int):
     event = db.query(Event).filter(Event.id == id).first()
     if event:
-        event.name = data.name
         event.date_end_of_bets = data.date_end_of_bets
         event.status = data.status
         event.cof = data.cof

@@ -29,7 +29,7 @@ async def get_bets(db: Session = Depends(get_db)):
 
 @router.get('/events/', tags=["events"])
 async def get_events():
-    url = "http://127.0.0.1:8001/event/all/"
+    url = "http://line_provider:8001/event/all/"
     return BetService.send_request(url)
 
 @router.post("/webhook/", tags=["bet"])

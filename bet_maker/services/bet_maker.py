@@ -29,12 +29,12 @@ def update_stat(data: bet.BetWebhooks, db: Session):
     if not bets:
         return {"message": f"No bets found for event {data.event_id}"}
 
-    is_win = data.event_stat == EventStatusEnum.win  # True/False
+    is_win = data.event_stat == EventStatusEnum.win
 
     for bet in bets:
         bet.is_win = is_win
 
-    db.commit()  # Один `commit` на все изменения
+    db.commit()
 
     return {"message": f"Updated {len(bets)} bets for event {data.event_id}"}
 

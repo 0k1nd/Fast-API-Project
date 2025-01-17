@@ -4,3 +4,7 @@
 2025-01-16 09:46:37,930 - INFO - ✅ Webhook processed successfully: {'message': 'Updated 1 bets for event 7'}
 2025-01-16 09:52:23,424 - INFO - 📩 Webhook received: event_id=1 event_stat=<EventStatusEnum.win: '1win'>
 2025-01-16 09:52:23,429 - INFO - ✅ Webhook processed successfully: {'message': 'Updated 1 bets for event 1'}
+2025-01-17 04:57:08,844 - INFO - 📩 Webhook received: event_id=0 event_stat=<EventStatusEnum.win: '1win'>
+2025-01-17 04:57:08,851 - INFO - ✅ Webhook processed successfully: {'message': 'No bets found for event 0'}
+2025-01-17 05:01:53,627 - INFO - 📩 Webhook received: event_id=1 event_stat=<EventStatusEnum.win: '1win'>
+2025-01-17 05:01:53,635 - INFO - ✅ Webhook processed successfully: {'message': 'Updated 1 bets for event 1'}
