@@ -9,7 +9,7 @@ def create_bet(data: bet.Bet, db: Session):
     bet = Bet(
         event_id=data.event_id,
         amount=data.amount,
-        is_win=data.is_win
+        is_win="false"
     )
     try:
         db.add(bet)

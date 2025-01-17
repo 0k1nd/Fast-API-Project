@@ -43,6 +43,14 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -641,7 +649,7 @@
         "kind": 2,
         "importPath": "bet_maker.services.bet_maker",
         "description": "bet_maker.services.bet_maker",
-        "peekOfCode": "def create_bet(data: bet.Bet, db: Session):\n    bet = Bet(\n        event_id=data.event_id,\n        amount=data.amount,\n        is_win=data.is_win\n    )\n    try:\n        db.add(bet)\n        db.commit()\n        db.refresh(bet)",
+        "peekOfCode": "def create_bet(data: bet.Bet, db: Session):\n    bet = Bet(\n        event_id=data.event_id,\n        amount=data.amount,\n        is_win=\"false\"\n    )\n    try:\n        db.add(bet)\n        db.commit()\n        db.refresh(bet)",
         "detail": "bet_maker.services.bet_maker",
         "documentation": {}
     },
@@ -727,6 +735,15 @@
         "documentation": {}
     },
     {
+        "label": "StatusEnum",
+        "kind": 6,
+        "importPath": "line_provider.dto.event",
+        "description": "line_provider.dto.event",
+        "peekOfCode": "class StatusEnum(str, Enum):\n    win = \"1win\"\n    lose = \"2win\"\nclass Event(BaseModel):\n    cof: float\n    date_end_of_bets: datetime\n    status: str",
+        "detail": "line_provider.dto.event",
+        "documentation": {}
+    },
+    {
         "label": "Event",
         "kind": 6,
         "importPath": "line_provider.dto.event",
@@ -749,7 +766,7 @@
         "kind": 2,
         "importPath": "line_provider.services.line_provider",
         "description": "line_provider.services.line_provider",
-        "peekOfCode": "def create_event(data: EventDTO.Event, db: Session):\n    event = Event(\n        date_end_of_bets=data.date_end_of_bets,\n        status=data.status,\n        cof = data.cof\n    )\n    try:\n        db.add(event)\n        db.commit()\n        db.refresh(event)",
+        "peekOfCode": "def create_event(data: EventDTO.Event, db: Session):\n    event = Event(\n        date_end_of_bets=data.date_end_of_bets,\n        status=\"pending\",\n        cof = data.cof\n    )\n    try:\n        db.add(event)\n        db.commit()\n        db.refresh(event)",
         "detail": "line_provider.services.line_provider",
         "documentation": {}
     },
@@ -803,7 +820,7 @@
         "kind": 5,
         "importPath": "line_provider.services.line_provider",
         "description": "line_provider.services.line_provider",
-        "peekOfCode": "BET_MAKER_WEBHOOK_URL = \"http://bet_maker:8000/bet/webhook/\"\ndef create_event(data: EventDTO.Event, db: Session):\n    event = Event(\n        date_end_of_bets=data.date_end_of_bets,\n        status=data.status,\n        cof = data.cof\n    )\n    try:\n        db.add(event)\n        db.commit()",
+        "peekOfCode": "BET_MAKER_WEBHOOK_URL = \"http://bet_maker:8000/bet/webhook/\"\ndef create_event(data: EventDTO.Event, db: Session):\n    event = Event(\n        date_end_of_bets=data.date_end_of_bets,\n        status=\"pending\",\n        cof = data.cof\n    )\n    try:\n        db.add(event)\n        db.commit()",
         "detail": "line_provider.services.line_provider",
         "documentation": {}
     },

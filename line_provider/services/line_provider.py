@@ -9,7 +9,7 @@ BET_MAKER_WEBHOOK_URL = "http://bet_maker:8000/bet/webhook/"
 def create_event(data: EventDTO.Event, db: Session):
     event = Event(
         date_end_of_bets=data.date_end_of_bets,
-        status=data.status,
+        status="pending",
         cof = data.cof
     )
     try:
