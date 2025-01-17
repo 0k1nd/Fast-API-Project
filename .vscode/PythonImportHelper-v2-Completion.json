@@ -749,7 +749,7 @@
         "kind": 2,
         "importPath": "line_provider.services.line_provider",
         "description": "line_provider.services.line_provider",
-        "peekOfCode": "def create_event(data: EventDTO.Event, db: Session):\n    event = Event(\n        date_end_of_bets=data.date_end_of_bets,\n        status=data.status,\n        cof = data.cof\n    )\n    try:\n        db.add(event)\n        db.commit()\n        db.refresh(event)",
+        "peekOfCode": "def create_event(data: EventDTO.Event, db: Session):\n    event = Event(\n        name=data.name,\n        date_end_of_bets=data.date_end_of_bets,\n        status=data.status,\n        cof = data.cof\n    )\n    try:\n        db.add(event)\n        db.commit()",
         "detail": "line_provider.services.line_provider",
         "documentation": {}
     },
@@ -758,25 +758,7 @@
         "kind": 2,
         "importPath": "line_provider.services.line_provider",
         "description": "line_provider.services.line_provider",
-        "peekOfCode": "def get_event(id: int, db: Session):\n    return db.query(Event).filter(Event.id == id).first()\ndef get_events(db: Session):\n    return db.query(Event).filter(Event.date_end_of_bets >= datetime.now()).all()\ndef send_webhook(event_id: int, event_stat: str):\n    payload = {\n        \"event_id\": event_id,\n        \"event_stat\": event_stat\n    }\n    try:",
-        "detail": "line_provider.services.line_provider",
-        "documentation": {}
-    },
-    {
-        "label": "get_events",
-        "kind": 2,
-        "importPath": "line_provider.services.line_provider",
-        "description": "line_provider.services.line_provider",
-        "peekOfCode": "def get_events(db: Session):\n    return db.query(Event).filter(Event.date_end_of_bets >= datetime.now()).all()\ndef send_webhook(event_id: int, event_stat: str):\n    payload = {\n        \"event_id\": event_id,\n        \"event_stat\": event_stat\n    }\n    try:\n        response = requests.post(BET_MAKER_WEBHOOK_URL, json=payload, timeout=5)\n        response.raise_for_status()",
-        "detail": "line_provider.services.line_provider",
-        "documentation": {}
-    },
-    {
-        "label": "send_webhook",
-        "kind": 2,
-        "importPath": "line_provider.services.line_provider",
-        "description": "line_provider.services.line_provider",
-        "peekOfCode": "def send_webhook(event_id: int, event_stat: str):\n    payload = {\n        \"event_id\": event_id,\n        \"event_stat\": event_stat\n    }\n    try:\n        response = requests.post(BET_MAKER_WEBHOOK_URL, json=payload, timeout=5)\n        response.raise_for_status()\n        print(f\"Webhook sent successfully: {payload}\")\n    except requests.RequestException as e:",
+        "peekOfCode": "def get_event(id: int, db: Session):\n    return db.query(Event).filter(Event.id == id).first()\ndef update(data: EventDTO.Event, db: Session, id: int):\n    event = db.query(Event).filter(Event.id == id).first()\n    if event:\n        event.name = data.name\n        event.date_end_of_bets = data.date_end_of_bets\n        event.status = data.status\n        db.commit()\n        db.refresh(event)",
         "detail": "line_provider.services.line_provider",
         "documentation": {}
     },
@@ -785,7 +767,7 @@
         "kind": 2,
         "importPath": "line_provider.services.line_provider",
         "description": "line_provider.services.line_provider",
-        "peekOfCode": "def update(data: EventDTO.Event, db: Session, id: int):\n    event = db.query(Event).filter(Event.id == id).first()\n    if event:\n        event.date_end_of_bets = data.date_end_of_bets\n        event.status = data.status\n        event.cof = data.cof\n        db.commit()\n        db.refresh(event)\n        if event.status == \"1win\" or \"2win\":\n            send_webhook(event.id, event.status)",
+        "peekOfCode": "def update(data: EventDTO.Event, db: Session, id: int):\n    event = db.query(Event).filter(Event.id == id).first()\n    if event:\n        event.name = data.name\n        event.date_end_of_bets = data.date_end_of_bets\n        event.status = data.status\n        db.commit()\n        db.refresh(event)\n        return event\n    else:",
         "detail": "line_provider.services.line_provider",
         "documentation": {}
     },
@@ -803,7 +785,7 @@
         "kind": 5,
         "importPath": "line_provider.services.line_provider",
         "description": "line_provider.services.line_provider",
-        "peekOfCode": "BET_MAKER_WEBHOOK_URL = \"http://bet_maker:8000/bet/webhook/\"\ndef create_event(data: EventDTO.Event, db: Session):\n    event = Event(\n        date_end_of_bets=data.date_end_of_bets,\n        status=data.status,\n        cof = data.cof\n    )\n    try:\n        db.add(event)\n        db.commit()",
+        "peekOfCode": "BET_MAKER_WEBHOOK_URL = \"http://bet_maker:8000/bet/webhook/\"\ndef create_event(data: EventDTO.Event, db: Session):\n    event = Event(\n        name=data.name,\n        date_end_of_bets=data.date_end_of_bets,\n        status=data.status,\n        cof = data.cof\n    )\n    try:\n        db.add(event)",
         "detail": "line_provider.services.line_provider",
         "documentation": {}
     },
