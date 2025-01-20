@@ -5,7 +5,7 @@ from typing import Optional
 class Bet(BaseModel):
     event_id: int
     amount: float
-    is_win: Optional[bool]
+    is_win: bool = False
 
     class Config:
         from_attributes = True

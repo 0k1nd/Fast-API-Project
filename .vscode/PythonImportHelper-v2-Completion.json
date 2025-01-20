@@ -164,11 +164,100 @@
         "documentation": {}
     },
     {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
         "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "sqlalchemy.ext.asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "create_async_engine",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "create_async_engine",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
         "documentation": {}
     },
     {
@@ -204,7 +293,7 @@
         "documentation": {}
     },
     {
-        "label": "Session",
+        "label": "selectinload",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -228,14 +317,6 @@
         "documentation": {}
     },
     {
-        "label": "Sessionlocal",
-        "importPath": "bet_maker.database",
-        "description": "bet_maker.database",
-        "isExtraImport": true,
-        "detail": "bet_maker.database",
-        "documentation": {}
-    },
-    {
         "label": "engine",
         "importPath": "bet_maker.database",
         "description": "bet_maker.database",
@@ -245,6 +326,14 @@
     },
     {
         "label": "Base",
+        "importPath": "bet_maker.database",
+        "description": "bet_maker.database",
+        "isExtraImport": true,
+        "detail": "bet_maker.database",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSessionLocal",
         "importPath": "bet_maker.database",
         "description": "bet_maker.database",
         "isExtraImport": true,
@@ -293,6 +382,22 @@
         "documentation": {}
     },
     {
+        "label": "select",
+        "importPath": "sqlalchemy.future",
+        "description": "sqlalchemy.future",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.future",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy.future",
+        "description": "sqlalchemy.future",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.future",
+        "documentation": {}
+    },
+    {
         "label": "requests",
         "kind": 6,
         "isExtraImport": true,
@@ -302,11 +407,36 @@
         "documentation": {}
     },
     {
-        "label": "create_engine",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
+        "label": "httpx",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "sqlalchemy",
+        "importPath": "httpx",
+        "description": "httpx",
+        "detail": "httpx",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "bet_maker",
+        "importPath": "bet_maker.routers",
+        "description": "bet_maker.routers",
+        "isExtraImport": true,
+        "detail": "bet_maker.routers",
         "documentation": {}
     },
     {
@@ -335,14 +465,6 @@
     },
     {
         "label": "Boolean",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "create_engine",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -398,39 +520,6 @@
         "documentation": {}
     },
     {
-        "label": "declarative_base",
-        "importPath": "sqlalchemy.ext.declarative",
-        "description": "sqlalchemy.ext.declarative",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.ext.declarative",
-        "documentation": {}
-    },
-    {
-        "label": "declarative_base",
-        "importPath": "sqlalchemy.ext.declarative",
-        "description": "sqlalchemy.ext.declarative",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.ext.declarative",
-        "documentation": {}
-    },
-    {
-        "label": "uvicorn",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "uvicorn",
-        "description": "uvicorn",
-        "detail": "uvicorn",
-        "documentation": {}
-    },
-    {
-        "label": "bet_maker",
-        "importPath": "bet_maker.routers",
-        "description": "bet_maker.routers",
-        "isExtraImport": true,
-        "detail": "bet_maker.routers",
-        "documentation": {}
-    },
-    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -471,11 +560,28 @@
         "documentation": {}
     },
     {
+        "label": "AsyncSessionLocal",
+        "importPath": "line_provider.database",
+        "description": "line_provider.database",
+        "isExtraImport": true,
+        "detail": "line_provider.database",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "line_provider.database",
         "description": "line_provider.database",
         "isExtraImport": true,
         "detail": "line_provider.database",
+        "documentation": {}
+    },
+    {
+        "label": "line_provider.services",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "line_provider.services",
+        "description": "line_provider.services",
+        "detail": "line_provider.services",
         "documentation": {}
     },
     {
@@ -511,11 +617,12 @@
         "documentation": {}
     },
     {
-        "label": "AsyncSession",
-        "importPath": "sqlalchemy.ext.asyncio",
-        "description": "sqlalchemy.ext.asyncio",
+        "label": "uvicorn",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "sqlalchemy.ext.asyncio",
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
         "documentation": {}
     },
     {
@@ -612,7 +719,7 @@
         "kind": 6,
         "importPath": "bet_maker.dto.bet",
         "description": "bet_maker.dto.bet",
-        "peekOfCode": "class Bet(BaseModel):\n    event_id: int\n    amount: float\n    is_win: Optional[bool]\n    class Config:\n        from_attributes = True\nclass EventStatusEnum(str, Enum):\n    win = \"1win\"\n    loss = \"2win\"\nclass BetWebhooks(BaseModel):",
+        "peekOfCode": "class Bet(BaseModel):\n    event_id: int\n    amount: float\n    is_win: bool = False\n    class Config:\n        from_attributes = True\nclass EventStatusEnum(str, Enum):\n    win = \"1win\"\n    loss = \"2win\"\nclass BetWebhooks(BaseModel):",
         "detail": "bet_maker.dto.bet",
         "documentation": {}
     },
@@ -639,7 +746,7 @@
         "kind": 5,
         "importPath": "bet_maker.routers.bet_maker",
         "description": "bet_maker.routers.bet_maker",
-        "peekOfCode": "logger = logging.getLogger(__name__)\nrouter = APIRouter()\n@router.post('/', tags=[\"bet\"])\nasync def create(data: BetDTO.Bet = None, db: Session = Depends(get_db)):\n    return BetService.create_bet(data, db)\n@router.get('/', tags=[\"bet\"])\nasync def get_bets(db: Session = Depends(get_db)):\n    return BetService.get_bets(db)\n@router.get('/events/', tags=[\"events\"])\nasync def get_events():",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nrouter = APIRouter()\n@router.post('/', tags=[\"bet\"])\nasync def create(data: BetDTO.Bet = None, db: AsyncSession = Depends(get_db)):\n    return await BetService.create_bet(data, db)\n@router.get('/', tags=[\"bet\"])\nasync def get_bets(db: AsyncSession = Depends(get_db)):\n    return await BetService.get_bets(db)\n@router.get('/events/', tags=[\"events\"])\nasync def get_events():",
         "detail": "bet_maker.routers.bet_maker",
         "documentation": {}
     },
@@ -648,61 +755,16 @@
         "kind": 5,
         "importPath": "bet_maker.routers.bet_maker",
         "description": "bet_maker.routers.bet_maker",
-        "peekOfCode": "router = APIRouter()\n@router.post('/', tags=[\"bet\"])\nasync def create(data: BetDTO.Bet = None, db: Session = Depends(get_db)):\n    return BetService.create_bet(data, db)\n@router.get('/', tags=[\"bet\"])\nasync def get_bets(db: Session = Depends(get_db)):\n    return BetService.get_bets(db)\n@router.get('/events/', tags=[\"events\"])\nasync def get_events():\n    url = \"http://line_provider:8001/event/all/\"",
+        "peekOfCode": "router = APIRouter()\n@router.post('/', tags=[\"bet\"])\nasync def create(data: BetDTO.Bet = None, db: AsyncSession = Depends(get_db)):\n    return await BetService.create_bet(data, db)\n@router.get('/', tags=[\"bet\"])\nasync def get_bets(db: AsyncSession = Depends(get_db)):\n    return await BetService.get_bets(db)\n@router.get('/events/', tags=[\"events\"])\nasync def get_events():\n    url = \"http://line_provider:8001/event/all/\"",
         "detail": "bet_maker.routers.bet_maker",
         "documentation": {}
     },
     {
-        "label": "create_bet",
-        "kind": 2,
-        "importPath": "bet_maker.services.bet_maker",
-        "description": "bet_maker.services.bet_maker",
-        "peekOfCode": "def create_bet(data: bet.Bet, db: Session):\n    bet = Bet(\n        event_id=data.event_id,\n        amount=data.amount,\n        is_win=\"false\"\n    )\n    try:\n        db.add(bet)\n        db.commit()\n        db.refresh(bet)",
-        "detail": "bet_maker.services.bet_maker",
-        "documentation": {}
-    },
-    {
-        "label": "get_bets",
-        "kind": 2,
-        "importPath": "bet_maker.services.bet_maker",
-        "description": "bet_maker.services.bet_maker",
-        "peekOfCode": "def get_bets(db: Session):\n    return db.query(Bet).all()\ndef update_stat(data: bet.BetWebhooks, db: Session):\n    bets = db.query(Bet).filter(Bet.event_id == data.event_id).all()\n    if not bets:\n        return {\"message\": f\"No bets found for event {data.event_id}\"}\n    is_win = data.event_stat == EventStatusEnum.win\n    for bet in bets:\n        bet.is_win = is_win\n    db.commit()",
-        "detail": "bet_maker.services.bet_maker",
-        "documentation": {}
-    },
-    {
-        "label": "update_stat",
-        "kind": 2,
-        "importPath": "bet_maker.services.bet_maker",
-        "description": "bet_maker.services.bet_maker",
-        "peekOfCode": "def update_stat(data: bet.BetWebhooks, db: Session):\n    bets = db.query(Bet).filter(Bet.event_id == data.event_id).all()\n    if not bets:\n        return {\"message\": f\"No bets found for event {data.event_id}\"}\n    is_win = data.event_stat == EventStatusEnum.win\n    for bet in bets:\n        bet.is_win = is_win\n    db.commit()\n    return {\"message\": f\"Updated {len(bets)} bets for event {data.event_id}\"}\ndef send_request(url):",
-        "detail": "bet_maker.services.bet_maker",
-        "documentation": {}
-    },
-    {
-        "label": "send_request",
-        "kind": 2,
-        "importPath": "bet_maker.services.bet_maker",
-        "description": "bet_maker.services.bet_maker",
-        "peekOfCode": "def send_request(url):\n    response = requests.get(url)\n    return response.json()",
-        "detail": "bet_maker.services.bet_maker",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "kind": 2,
-        "importPath": "bet_maker.database",
-        "description": "bet_maker.database",
-        "peekOfCode": "def get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
-        "detail": "bet_maker.database",
-        "documentation": {}
-    },
-    {
-        "label": "SQLALCHEMY_URL",
+        "label": "DATABASE_URL",
         "kind": 5,
         "importPath": "bet_maker.database",
         "description": "bet_maker.database",
-        "peekOfCode": "SQLALCHEMY_URL = \"postgresql://pweb:pweb@db1:5432/fast_api_bm\"\nengine = create_engine(SQLALCHEMY_URL)\nSessionlocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "peekOfCode": "DATABASE_URL = \"postgresql+asyncpg://pweb:pweb@db1:5432/fast_api_bm\"\nengine = create_async_engine(DATABASE_URL, echo=True)\nAsyncSessionLocal = sessionmaker(\n    bind=engine,\n    class_=AsyncSession,\n    expire_on_commit=False,\n)\nBase = declarative_base()\nasync def get_db():\n    async with AsyncSessionLocal() as session:",
         "detail": "bet_maker.database",
         "documentation": {}
     },
@@ -711,16 +773,16 @@
         "kind": 5,
         "importPath": "bet_maker.database",
         "description": "bet_maker.database",
-        "peekOfCode": "engine = create_engine(SQLALCHEMY_URL)\nSessionlocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "peekOfCode": "engine = create_async_engine(DATABASE_URL, echo=True)\nAsyncSessionLocal = sessionmaker(\n    bind=engine,\n    class_=AsyncSession,\n    expire_on_commit=False,\n)\nBase = declarative_base()\nasync def get_db():\n    async with AsyncSessionLocal() as session:\n        yield session",
         "detail": "bet_maker.database",
         "documentation": {}
     },
     {
-        "label": "Sessionlocal",
+        "label": "AsyncSessionLocal",
         "kind": 5,
         "importPath": "bet_maker.database",
         "description": "bet_maker.database",
-        "peekOfCode": "Sessionlocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "peekOfCode": "AsyncSessionLocal = sessionmaker(\n    bind=engine,\n    class_=AsyncSession,\n    expire_on_commit=False,\n)\nBase = declarative_base()\nasync def get_db():\n    async with AsyncSessionLocal() as session:\n        yield session",
         "detail": "bet_maker.database",
         "documentation": {}
     },
@@ -729,8 +791,17 @@
         "kind": 5,
         "importPath": "bet_maker.database",
         "description": "bet_maker.database",
-        "peekOfCode": "Base = declarative_base()\ndef get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "peekOfCode": "Base = declarative_base()\nasync def get_db():\n    async with AsyncSessionLocal() as session:\n        yield session",
         "detail": "bet_maker.database",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "bet_maker.main",
+        "description": "bet_maker.main",
+        "peekOfCode": "app = FastAPI()\nasync def init_db():\n    async with engine.begin() as conn:\n        await conn.run_sync(Base.metadata.create_all)\n@app.on_event(\"startup\")\nasync def on_startup():\n    await init_db()\napp.include_router(BetRouter.router, prefix=\"/bet\")",
+        "detail": "bet_maker.main",
         "documentation": {}
     },
     {
@@ -743,20 +814,11 @@
         "documentation": {}
     },
     {
-        "label": "StatusEnum",
-        "kind": 6,
-        "importPath": "line_provider.dto.event",
-        "description": "line_provider.dto.event",
-        "peekOfCode": "class StatusEnum(str, Enum):\n    win = \"1win\"\n    lose = \"2win\"\nclass Event(BaseModel):\n    cof: float\n    date_end_of_bets: datetime\n    status: str",
-        "detail": "line_provider.dto.event",
-        "documentation": {}
-    },
-    {
         "label": "Event",
         "kind": 6,
         "importPath": "line_provider.dto.event",
         "description": "line_provider.dto.event",
-        "peekOfCode": "class Event(BaseModel):\n    cof: float\n    date_end_of_bets: datetime\n    status: str",
+        "peekOfCode": "class Event(BaseModel):\n    cof: float\n    date_end_of_bets: datetime\n    status: str = \"pending\"\n    class Config:\n        from_attributes = True",
         "detail": "line_provider.dto.event",
         "documentation": {}
     },
@@ -765,62 +827,8 @@
         "kind": 5,
         "importPath": "line_provider.routers.line_provider",
         "description": "line_provider.routers.line_provider",
-        "peekOfCode": "router = APIRouter()\n@router.post('/', tags=[\"event\"])\nasync def create(data: EventDTO.Event, db: Session = Depends(get_db)):\n    try:\n        return EventService.create_event(data, db)\n    except Exception as e:\n        raise HTTPException(status_code=400, detail=str(e))\n@router.get('/all/', tags=[\"event\"])\nasync def get_events(db: Session = Depends(get_db)):\n    return EventService.get_events(db)",
+        "peekOfCode": "router = APIRouter()\n@router.post('/', tags=[\"event\"])\nasync def create(data: EventDTO.Event, db: AsyncSession = Depends(get_db)):\n    try:\n        return await EventService.create_event(data, db)\n    except Exception as e:\n        raise HTTPException(status_code=400, detail=str(e))\n@router.get('/all/', tags=[\"event\"])\nasync def get_events(db: AsyncSession = Depends(get_db)):\n    return await EventService.get_events(db)",
         "detail": "line_provider.routers.line_provider",
-        "documentation": {}
-    },
-    {
-        "label": "create_event",
-        "kind": 2,
-        "importPath": "line_provider.services.line_provider",
-        "description": "line_provider.services.line_provider",
-        "peekOfCode": "def create_event(data: EventDTO.Event, db: Session):\n    event = Event(\n        date_end_of_bets=data.date_end_of_bets,\n        status=\"pending\",\n        cof = data.cof\n    )\n    try:\n        db.add(event)\n        db.commit()\n        db.refresh(event)",
-        "detail": "line_provider.services.line_provider",
-        "documentation": {}
-    },
-    {
-        "label": "get_event",
-        "kind": 2,
-        "importPath": "line_provider.services.line_provider",
-        "description": "line_provider.services.line_provider",
-        "peekOfCode": "def get_event(id: int, db: Session):\n    return db.query(Event).filter(Event.id == id).first()\ndef get_events(db: Session):\n    return db.query(Event).filter(Event.date_end_of_bets >= datetime.now()).all()\ndef send_webhook(event_id: int, event_stat: str):\n    payload = {\n        \"event_id\": event_id,\n        \"event_stat\": event_stat\n    }\n    try:",
-        "detail": "line_provider.services.line_provider",
-        "documentation": {}
-    },
-    {
-        "label": "get_events",
-        "kind": 2,
-        "importPath": "line_provider.services.line_provider",
-        "description": "line_provider.services.line_provider",
-        "peekOfCode": "def get_events(db: Session):\n    return db.query(Event).filter(Event.date_end_of_bets >= datetime.now()).all()\ndef send_webhook(event_id: int, event_stat: str):\n    payload = {\n        \"event_id\": event_id,\n        \"event_stat\": event_stat\n    }\n    try:\n        response = requests.post(BET_MAKER_WEBHOOK_URL, json=payload, timeout=5)\n        response.raise_for_status()",
-        "detail": "line_provider.services.line_provider",
-        "documentation": {}
-    },
-    {
-        "label": "send_webhook",
-        "kind": 2,
-        "importPath": "line_provider.services.line_provider",
-        "description": "line_provider.services.line_provider",
-        "peekOfCode": "def send_webhook(event_id: int, event_stat: str):\n    payload = {\n        \"event_id\": event_id,\n        \"event_stat\": event_stat\n    }\n    try:\n        response = requests.post(BET_MAKER_WEBHOOK_URL, json=payload, timeout=5)\n        response.raise_for_status()\n        print(f\"Webhook sent successfully: {payload}\")\n    except requests.RequestException as e:",
-        "detail": "line_provider.services.line_provider",
-        "documentation": {}
-    },
-    {
-        "label": "update",
-        "kind": 2,
-        "importPath": "line_provider.services.line_provider",
-        "description": "line_provider.services.line_provider",
-        "peekOfCode": "def update(data: EventDTO.Event, db: Session, id: int):\n    event = db.query(Event).filter(Event.id == id).first()\n    if event:\n        event.date_end_of_bets = data.date_end_of_bets\n        event.status = data.status\n        event.cof = data.cof\n        db.commit()\n        db.refresh(event)\n        if event.status == \"1win\" or \"2win\":\n            send_webhook(event.id, event.status)",
-        "detail": "line_provider.services.line_provider",
-        "documentation": {}
-    },
-    {
-        "label": "remove",
-        "kind": 2,
-        "importPath": "line_provider.services.line_provider",
-        "description": "line_provider.services.line_provider",
-        "peekOfCode": "def remove(db: Session, id: int):\n    event = db.query(Event).filter(Event.id == id).first()\n    if event:\n        db.delete(event)\n        db.commit()\n        return {\"message\": \"Event deleted successfully\"}\n    else:\n        raise ValueError(f\"Event with ID {id} not found\")",
-        "detail": "line_provider.services.line_provider",
         "documentation": {}
     },
     {
@@ -828,25 +836,16 @@
         "kind": 5,
         "importPath": "line_provider.services.line_provider",
         "description": "line_provider.services.line_provider",
-        "peekOfCode": "BET_MAKER_WEBHOOK_URL = \"http://bet_maker:8000/bet/webhook/\"\ndef create_event(data: EventDTO.Event, db: Session):\n    event = Event(\n        date_end_of_bets=data.date_end_of_bets,\n        status=\"pending\",\n        cof = data.cof\n    )\n    try:\n        db.add(event)\n        db.commit()",
+        "peekOfCode": "BET_MAKER_WEBHOOK_URL = \"http://bet_maker:8000/bet/webhook/\"\nasync def create_event(data: EventDTO.Event, db: AsyncSession):\n    if not data:\n        raise HTTPException(status_code=400, detail=\"Received None instead of event data\")\n    event = Event(\n        date_end_of_bets=data.date_end_of_bets.replace(tzinfo=None),\n        status= data.status,\n        cof = data.cof\n    )\n    try:",
         "detail": "line_provider.services.line_provider",
         "documentation": {}
     },
     {
-        "label": "get_db",
-        "kind": 2,
-        "importPath": "line_provider.database",
-        "description": "line_provider.database",
-        "peekOfCode": "def get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
-        "detail": "line_provider.database",
-        "documentation": {}
-    },
-    {
-        "label": "SQLALCHEMY_URL",
+        "label": "DATABASE_URL",
         "kind": 5,
         "importPath": "line_provider.database",
         "description": "line_provider.database",
-        "peekOfCode": "SQLALCHEMY_URL = \"postgresql://pweb:pweb@db2:5432/fast_api_lp\"\nengine = create_engine(SQLALCHEMY_URL)\nSessionlocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "peekOfCode": "DATABASE_URL = \"postgresql+asyncpg://pweb:pweb@db2:5432/fast_api_lp\"\nengine = create_async_engine(DATABASE_URL, echo=True)\nAsyncSessionLocal = sessionmaker(\n    bind=engine,\n    class_=AsyncSession,\n    expire_on_commit=False,\n)\nBase = declarative_base()\nasync def get_db():\n    async with AsyncSessionLocal() as session:",
         "detail": "line_provider.database",
         "documentation": {}
     },
@@ -855,16 +854,16 @@
         "kind": 5,
         "importPath": "line_provider.database",
         "description": "line_provider.database",
-        "peekOfCode": "engine = create_engine(SQLALCHEMY_URL)\nSessionlocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "peekOfCode": "engine = create_async_engine(DATABASE_URL, echo=True)\nAsyncSessionLocal = sessionmaker(\n    bind=engine,\n    class_=AsyncSession,\n    expire_on_commit=False,\n)\nBase = declarative_base()\nasync def get_db():\n    async with AsyncSessionLocal() as session:\n        yield session",
         "detail": "line_provider.database",
         "documentation": {}
     },
     {
-        "label": "Sessionlocal",
+        "label": "AsyncSessionLocal",
         "kind": 5,
         "importPath": "line_provider.database",
         "description": "line_provider.database",
-        "peekOfCode": "Sessionlocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "peekOfCode": "AsyncSessionLocal = sessionmaker(\n    bind=engine,\n    class_=AsyncSession,\n    expire_on_commit=False,\n)\nBase = declarative_base()\nasync def get_db():\n    async with AsyncSessionLocal() as session:\n        yield session",
         "detail": "line_provider.database",
         "documentation": {}
     },
@@ -873,7 +872,7 @@
         "kind": 5,
         "importPath": "line_provider.database",
         "description": "line_provider.database",
-        "peekOfCode": "Base = declarative_base()\ndef get_db():\n    db = Sessionlocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "peekOfCode": "Base = declarative_base()\nasync def get_db():\n    async with AsyncSessionLocal() as session:\n        yield session",
         "detail": "line_provider.database",
         "documentation": {}
     },
@@ -882,7 +881,7 @@
         "kind": 5,
         "importPath": "line_provider.main",
         "description": "line_provider.main",
-        "peekOfCode": "app = FastAPI()\napp.include_router(LineRouter.router, prefix=\"/event\")",
+        "peekOfCode": "app = FastAPI()\nasync def init_db():\n    async with engine.begin() as conn:\n        await conn.run_sync(Base.metadata.create_all)\n@app.on_event(\"startup\")\nasync def on_startup():\n    await init_db()\napp.include_router(LineRouter.router, prefix=\"/event\")",
         "detail": "line_provider.main",
         "documentation": {}
     },
