@@ -42,35 +42,35 @@ async def get_events(db: AsyncSession):
         events = result.scalars().all()
     return events
 
-async def send_webhook(event_id: int, event_stat: str):
-    payload = {
-        "event_id": event_id,
-        "event_stat": event_stat
-    }
+async def send_webhook(event_id: int, status: str):
+    url = "http://bet_maker:8000/bet/webhook/"
+    payload = {"event_id": event_id, "event_stat": status}
+    
     async with httpx.AsyncClient() as client:
-        try:
-            response = await client.post(BET_MAKER_WEBHOOK_URL, json=payload, timeout=5)
-            response.raise_for_status()
-            print(f"Webhook sent successfully: {payload}")
-        except httpx.RequestError as e:
-            print(f"Error sending webhook: {e}")
+        response = await client.post(url, json=payload)
+        
+        if response.status_code != 200:
+            print(f"❌ Ошибка вебхука: {response.text}")
+            response.raise_for_status() 
 
-async def update(data: EventDTO.Event, db: AsyncSession, id: int):
-    result = await db.execute(select(Event).filter(Event.id == id))
-    event = result.scalars().first()
-    if event:
-        event.date_end_of_bets = data.date_end_of_bets
-        event.status = data.status
-        event.cof = data.cof
-        await db.commit()
-        await db.refresh(event)
+async def update(data: EventDTO, db: AsyncSession, id: int):
+    async with db.begin():
+        result = await db.execute(select(Event).filter(Event.id == id))
+        event = result.scalars().first()
 
-        if event.status in ["1win", "2win"]:
-            await send_webhook(event.id, event.status)
-
-        return event
-    else:
+    if not event:
         raise ValueError(f"Event with ID {id} not found")
+
+    event.date_end_of_bets = data.date_end_of_bets.replace(tzinfo=None)
+    event.status = data.status
+    event.cof = data.cof
+
+    await db.commit()
+    await db.refresh(event)
+
+    if event.status in ["1win", "2win"]:
+        await send_webhook(event.id, event.status)
+    return event
 
 
 async def remove(db: AsyncSession, id: int):

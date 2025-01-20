@@ -183,3 +183,132 @@ WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind 
 2025-01-20 09:05:04,844 - INFO - [generated in 0.00056s] ('bets', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
 2025-01-20 09:05:04,848 - INFO - COMMIT
 2025-01-20 09:05:45,903 - INFO - HTTP Request: GET http://line_provider:8001/event/all/ "HTTP/1.1 200 OK"
+2025-01-20 09:15:54,681 - INFO - select pg_catalog.version()
+2025-01-20 09:15:54,682 - INFO - [raw sql] ()
+2025-01-20 09:15:54,685 - INFO - select current_schema()
+2025-01-20 09:15:54,685 - INFO - [raw sql] ()
+2025-01-20 09:15:54,687 - INFO - show standard_conforming_strings
+2025-01-20 09:15:54,687 - INFO - [raw sql] ()
+2025-01-20 09:15:54,688 - INFO - BEGIN (implicit)
+2025-01-20 09:15:54,692 - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2025-01-20 09:15:54,692 - INFO - [generated in 0.00052s] ('bets', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2025-01-20 09:15:54,697 - INFO - 
+CREATE TABLE bets (
+	id SERIAL NOT NULL, 
+	event_id INTEGER, 
+	amount FLOAT, 
+	is_win BOOLEAN, 
+	PRIMARY KEY (id)
+)
+
+
+2025-01-20 09:15:54,698 - INFO - [no key 0.00045s] ()
+2025-01-20 09:15:54,702 - INFO - CREATE INDEX ix_bets_event_id ON bets (event_id)
+2025-01-20 09:15:54,703 - INFO - [no key 0.00043s] ()
+2025-01-20 09:15:54,705 - INFO - CREATE INDEX ix_bets_id ON bets (id)
+2025-01-20 09:15:54,705 - INFO - [no key 0.00048s] ()
+2025-01-20 09:15:54,707 - INFO - COMMIT
+2025-01-20 09:18:35,394 - INFO - select pg_catalog.version()
+2025-01-20 09:18:35,395 - INFO - [raw sql] ()
+2025-01-20 09:18:35,397 - INFO - select current_schema()
+2025-01-20 09:18:35,397 - INFO - [raw sql] ()
+2025-01-20 09:18:35,399 - INFO - show standard_conforming_strings
+2025-01-20 09:18:35,400 - INFO - [raw sql] ()
+2025-01-20 09:18:35,402 - INFO - BEGIN (implicit)
+2025-01-20 09:18:35,405 - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2025-01-20 09:18:35,406 - INFO - [generated in 0.00057s] ('bets', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2025-01-20 09:18:35,409 - INFO - COMMIT
+2025-01-20 09:21:53,547 - INFO - select pg_catalog.version()
+2025-01-20 09:21:53,547 - INFO - [raw sql] ()
+2025-01-20 09:21:53,550 - INFO - select current_schema()
+2025-01-20 09:21:53,551 - INFO - [raw sql] ()
+2025-01-20 09:21:53,553 - INFO - show standard_conforming_strings
+2025-01-20 09:21:53,553 - INFO - [raw sql] ()
+2025-01-20 09:21:53,555 - INFO - BEGIN (implicit)
+2025-01-20 09:21:53,560 - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2025-01-20 09:21:53,561 - INFO - [generated in 0.00071s] ('bets', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2025-01-20 09:21:53,565 - INFO - COMMIT
+2025-01-20 09:23:18,150 - INFO - select pg_catalog.version()
+2025-01-20 09:23:18,150 - INFO - [raw sql] ()
+2025-01-20 09:23:18,153 - INFO - select current_schema()
+2025-01-20 09:23:18,153 - INFO - [raw sql] ()
+2025-01-20 09:23:18,155 - INFO - show standard_conforming_strings
+2025-01-20 09:23:18,156 - INFO - [raw sql] ()
+2025-01-20 09:23:18,158 - INFO - BEGIN (implicit)
+2025-01-20 09:23:18,163 - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2025-01-20 09:23:18,163 - INFO - [generated in 0.00076s] ('bets', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2025-01-20 09:23:18,168 - INFO - COMMIT
+2025-01-20 09:33:00,272 - INFO - select pg_catalog.version()
+2025-01-20 09:33:00,272 - INFO - [raw sql] ()
+2025-01-20 09:33:00,275 - INFO - select current_schema()
+2025-01-20 09:33:00,276 - INFO - [raw sql] ()
+2025-01-20 09:33:00,278 - INFO - show standard_conforming_strings
+2025-01-20 09:33:00,278 - INFO - [raw sql] ()
+2025-01-20 09:33:00,280 - INFO - BEGIN (implicit)
+2025-01-20 09:33:00,285 - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2025-01-20 09:33:00,285 - INFO - [generated in 0.00068s] ('bets', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2025-01-20 09:33:00,290 - INFO - COMMIT
+2025-01-20 09:36:33,412 - INFO - select pg_catalog.version()
+2025-01-20 09:36:33,412 - INFO - [raw sql] ()
+2025-01-20 09:36:33,415 - INFO - select current_schema()
+2025-01-20 09:36:33,415 - INFO - [raw sql] ()
+2025-01-20 09:36:33,417 - INFO - show standard_conforming_strings
+2025-01-20 09:36:33,417 - INFO - [raw sql] ()
+2025-01-20 09:36:33,419 - INFO - BEGIN (implicit)
+2025-01-20 09:36:33,422 - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2025-01-20 09:36:33,423 - INFO - [generated in 0.00053s] ('bets', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2025-01-20 09:36:33,426 - INFO - COMMIT
+2025-01-20 09:38:25,291 - INFO - select pg_catalog.version()
+2025-01-20 09:38:25,291 - INFO - [raw sql] ()
+2025-01-20 09:38:25,294 - INFO - select current_schema()
+2025-01-20 09:38:25,294 - INFO - [raw sql] ()
+2025-01-20 09:38:25,296 - INFO - show standard_conforming_strings
+2025-01-20 09:38:25,297 - INFO - [raw sql] ()
+2025-01-20 09:38:25,298 - INFO - BEGIN (implicit)
+2025-01-20 09:38:25,303 - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2025-01-20 09:38:25,303 - INFO - [generated in 0.00062s] ('bets', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2025-01-20 09:38:25,307 - INFO - COMMIT
+2025-01-20 09:41:17,587 - INFO - select pg_catalog.version()
+2025-01-20 09:41:17,587 - INFO - [raw sql] ()
+2025-01-20 09:41:17,590 - INFO - select current_schema()
+2025-01-20 09:41:17,590 - INFO - [raw sql] ()
+2025-01-20 09:41:17,592 - INFO - show standard_conforming_strings
+2025-01-20 09:41:17,593 - INFO - [raw sql] ()
+2025-01-20 09:41:17,595 - INFO - BEGIN (implicit)
+2025-01-20 09:41:17,600 - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2025-01-20 09:41:17,600 - INFO - [generated in 0.00069s] ('bets', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2025-01-20 09:41:17,605 - INFO - COMMIT
+2025-01-20 09:41:21,319 - INFO - 📩 Webhook received: event_id=2 event_stat=<EventStatusEnum.win: '1win'>
+2025-01-20 09:41:21,320 - ERROR - ❌ Webhook processing error: 'Select' object has no attribute 'all'
+2025-01-20 09:58:59,453 - INFO - select pg_catalog.version()
+2025-01-20 09:58:59,454 - INFO - [raw sql] ()
+2025-01-20 09:58:59,456 - INFO - select current_schema()
+2025-01-20 09:58:59,457 - INFO - [raw sql] ()
+2025-01-20 09:58:59,459 - INFO - show standard_conforming_strings
+2025-01-20 09:58:59,459 - INFO - [raw sql] ()
+2025-01-20 09:58:59,461 - INFO - BEGIN (implicit)
+2025-01-20 09:58:59,465 - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2025-01-20 09:58:59,465 - INFO - [generated in 0.00070s] ('bets', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2025-01-20 09:58:59,469 - INFO - COMMIT
+2025-01-20 10:01:17,521 - INFO - 📩 Webhook received: event_id=2 event_stat=<EventStatusEnum.win: '1win'>
+2025-01-20 10:01:17,522 - ERROR - ❌ Webhook processing error: 'Select' object has no attribute 'all'
+2025-01-20 10:01:44,141 - INFO - 📩 Webhook received: event_id=2 event_stat=<EventStatusEnum.win: '1win'>
+2025-01-20 10:01:44,142 - ERROR - ❌ Webhook processing error: 'Select' object has no attribute 'all'
