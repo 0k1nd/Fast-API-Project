@@ -1,5 +1,6 @@
 import requests
 from line_provider.models import Event
+from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import Session
 from line_provider.dto import event as EventDTO
 from datetime import datetime
