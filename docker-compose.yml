@@ -1,16 +1,30 @@
 version: '3.9'
 
 services:
+
+  admin_panel:
+    build:
+      context: ./admin_panel
+      dockerfile: Dockerfile.admin
+    ports:
+      - "8002:8002"
+    depends_on:
+      - db1
+    environment:
+      - DATABASE_URL=postgresql://pweb:pweb@db1:5432/fast_api_bm
+    networks:
+      - app_network
+
   bet_maker:
     build:
       context: .
-      dockerfile: Dockerfile_bm
+      dockerfile: Dockerfile.bm
     ports:
       - "8000:8000"
     volumes:
       - .:/bet_maker
     environment:
-      - DATABASE_URL=postgresql://pweb:pweb@db1:5432/fast_api_bm
+      - DATABASE_URL=postgresql://pweb:pweb@db1:5432/fast_apibm
     depends_on:
       - db1
     networks:
@@ -19,7 +33,7 @@ services:
   line_provider:
     build:
       context: .
-      dockerfile: Dockerfile_lp
+      dockerfile: Dockerfile.lp
     ports:
       - "8001:8001"
     volumes:
