@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from line_provider.database import get_db
+from line_provider.app.db.database import get_db
 from line_provider.services import line_provider as EventService
 from line_provider.dto import event as EventDTO
 from sqlalchemy.ext.asyncio import AsyncSession

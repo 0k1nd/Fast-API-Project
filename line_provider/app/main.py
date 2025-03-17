@@ -2,7 +2,7 @@ import line_provider.services
 import uvicorn
 from fastapi import FastAPI
 from line_provider.routers import line_provider as LineRouter
-from line_provider.database import engine, Base, AsyncSessionLocal
+from line_provider.app.db.database import engine, Base, AsyncSessionLocal
 
 app = FastAPI()
 

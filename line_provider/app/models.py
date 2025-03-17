@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, DECIMAL, String, DateTime, CheckConstraint
-from line_provider.database import Base
+from line_provider.app.db.database import Base
 
 class Event(Base):
     __tablename__ = "events"
